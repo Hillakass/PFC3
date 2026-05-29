@@ -1,0 +1,49 @@
+# =====================================================================
+# CONVERSACIÓN DE PRUEBA — usuario / sistema
+# =====================================================================
+# Formato: cada línea empieza con USER: o ASSISTANT: seguido del texto.
+# Las líneas en blanco y las que empiezan con # se ignoran.
+#
+# La conversación recorre 4 temas con transiciones naturales:
+#   Tema 1 (turnos 0-5):   mudanza a Barcelona y trabajo en Glovo
+#   Tema 2 (turnos 6-11):  cocina italiana / clases con el chef Marco
+#   Tema 3 (turnos 12-17): rutina de running y lesión de rodilla
+#   Tema 4 (turnos 18-23): adopción del perro Toby
+#   Cierre  (turnos 24-25): vuelve a mencionar Barcelona + Toby (entidades cruzadas)
+# =====================================================================
+
+# --- TEMA 1: mudanza a Barcelona -------------------------------------
+USER: I just moved from Valencia to Barcelona last week for a new job.
+ASSISTANT: Congratulations on the move to Barcelona. How is the new job going so far?
+USER: It is at a startup called Glovo and I work as a backend engineer.
+ASSISTANT: Glovo is a well-known company. Are you enjoying the backend work there?
+USER: Yes, my manager Elena is great and the team uses Go and Kubernetes.
+ASSISTANT: That sounds like a solid stack. Working with Elena seems to be a good fit.
+
+# --- TEMA 2: cocina italiana (cambio de tema) ------------------------
+USER: Changing topic, I started taking Italian cooking classes on Tuesdays.
+ASSISTANT: That is a fun hobby. What dishes have you learned so far?
+USER: The teacher is chef Marco and last week we made fresh tagliatelle from scratch.
+ASSISTANT: Fresh pasta is impressive. Does chef Marco run his own restaurant?
+USER: Yes, his restaurant is called La Tavola in the Gracia neighborhood.
+ASSISTANT: La Tavola in Gracia sounds charming. Will you go back to eat there?
+
+# --- TEMA 3: running y lesión (otro cambio de tema) ------------------
+USER: By the way, I have been running every morning in Parc de la Ciutadella.
+ASSISTANT: That is a beautiful park to run in. How long are your runs?
+USER: Usually 8 kilometers, but yesterday I hurt my right knee and had to stop.
+ASSISTANT: Sorry to hear about the knee. Have you seen a doctor?
+USER: I have an appointment with Dr. Ferrer at Clinica Diagonal on Thursday.
+ASSISTANT: Hopefully Dr. Ferrer can help you recover quickly.
+
+# --- TEMA 4: adopción del perro Toby (otro cambio) -------------------
+USER: On a happier note, I adopted a dog last Saturday and named him Toby.
+ASSISTANT: That is wonderful news. What breed is Toby?
+USER: Toby is a two-year-old beagle from a shelter called Refugio Esperanza.
+ASSISTANT: Beagles are great companions. Is Toby adjusting well to your apartment?
+USER: Yes, he loves the balcony and my neighbor Sofia helps me walk him sometimes.
+ASSISTANT: It is great that Sofia helps. Toby seems to be in good hands.
+
+# --- CIERRE: entidades cruzadas (Barcelona vuelve a aparecer) --------
+USER: This weekend I will take Toby to the beach in Barceloneta.
+ASSISTANT: Barceloneta is a perfect spot. Toby will love the sand and the sea.
